@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Termux Ultimate Hacking Guide</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background: #020617;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 100;
+      border-bottom: 2px solid #38bdf8;
+    }
+    header h1 {
+      font-size: 20px;
+      margin: 0;
+      color: #38bdf8;
+      flex: 1;
+    }
+    #search {
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #38bdf8;
+      background: #1e293b;
+      color: white;
+      width: 200px;
+    }
+    main {
+      padding: 16px;
+      max-width: 800px;
+      margin: auto;
+    }
+    section {
+      background: #1e293b;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      border: 1px solid #334155;
+    }
+    h2 {
+      color: #22d3ee;
+      margin-top: 0;
+      border-bottom: 1px solid #334155;
+      padding-bottom: 10px;
+    }
+    .tool-box {
+      background: #020617;
+      border: 1px solid #1e293b;
+      padding: 12px;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+    .cmd-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #a5f3fc;
+      font-family: monospace;
+      margin-bottom: 8px;
+    }
+    .btn-group {
+      display: flex;
+      gap: 5px;
+    }
+    button {
+      border: none;
+      border-radius: 4px;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .copy-btn { background: #38bdf8; color: #020617; }
+    .yt-btn { background: #ef4444; color: white; text-decoration: none; display: inline-block; }
+    button:hover { opacity: 0.8; }
+    .warning {
+      background: #450a0a;
+      border: 1px solid #ef4444;
+      padding: 10px;
+      border-radius: 8px;
+      color: #fca5a5;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>⚡ Termux Elite Guide</h1>
+  <input type="text" id="search" placeholder="Search Tools (e.g. Phishing)..." />
+</header>
+
+<main id="content">
+
+<section class="warning">
+  <strong>⚠️ LEGAL DISCLAIMER:</strong> This guide is for educational purposes and authorized penetration testing only. Usage of these tools for attacking targets without prior mutual consent is illegal.
+</section>
+
+<section>
+  <h2>🛠️ All-in-One Toolkits</h2>
+  <p>Automated scripts containing hundreds of hacking tools.</p>
+  
+  <div class="tool-box">
+    <strong>Tool: Tool-X</strong>
+    <div class="cmd-row">
+      git clone https://github.com/Z4nzu/Tool-X
+      <div class="btn-group">
+        <button class="copy-btn" onclick="copyText('git clone https://github.com/Z4nzu/Tool-X')">Copy</button>
+        <a href="https://www.youtube.com/results?search_query=how+to+install+tool-x+in+termux" target="_blank" class="yt-btn"><button class="yt-btn">Video</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="tool-box">
+    <strong>Tool: Metasploit Framework</strong>
+    <div class="cmd-row">
+      pkg install metasploit
+      <div class="btn-group">
+        <button class="copy-btn" onclick="copyText('pkg install metasploit')">Copy</button>
+        <a href="https://www.youtube.com/results?search_query=metasploit+termux+tutorial" target="_blank" class="yt-btn"><button class="yt-btn">Video</button></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>🎣 Phishing Kits</h2>
+  <p>Create fake login pages for social media credential harvesting.</p>
+  
+  <div class="tool-box">
+    <strong>Tool: ZPhisher</strong>
+    <div class="cmd-row">
+      git clone https://github.com/htr-tech/zphisher
+      <div class="btn-group">
+        <button class="copy-btn" onclick="copyText('git clone https://github.com/htr-tech/zphisher')">Copy</button>
+        <a href="https://www.youtube.com/results?search_query=zphisher+termux+guide" target="_blank" class="yt-btn"><button class="yt-btn">Video</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="tool-box">
+    <strong>Tool: AdvPhishing</strong>
+    <div class="cmd-row">
+      git clone https://github.com/AbirHasan2005/AdvPhishing
+      <div class="btn-group">
+        <button class="copy-btn" onclick="copyText('git clone https://github.com/AbirHasan2005/AdvPhishing')">Copy</button>
+        <a href="https://www.youtube.com/results?search_query=advphishing+termux" target="_blank" class="yt-btn"><button class="yt-btn">Video</button></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>📡 Bluetooth & Wireless Attacks</h2>
+  <p>Scan and exploit Bluetooth devices (Requires Root for some features).</p>
+  
+  <div class="tool-box">
+    <strong>Tool: BlueZ (Official Stack)</strong>
+    <div class="cmd-row">
+      pkg install bluez
+      <div class="btn-group">
+        <button class="copy-btn" onclick="copyText('pkg install bluez')">Copy</button>
+        <a href="https://www.youtube.com/results?search_query=termux+bluetooth+hacking+bluez" target="_blank" class="yt-btn"><button class="yt-btn">Video</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="tool-box">
+    <strong>Tool: Bluesnarfer</strong>
+    <div class="cmd-row">
+      pkg install bluesnarfer
+      <div class="btn-group">
+        <button class="copy-btn" onclick="copyText('pkg install bluesnarfer')">Copy</button>
+        <a href="https://www.youtube.com/results?search_query=bluesnarfer+tutorial" target="_blank" class="yt-btn"><button class="yt-btn">Video</button></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>🔍 Information Gathering</h2>
+  <div class="tool-box">
+    <strong>Tool: Nmap (Network Mapper)</strong>
+    <div class="cmd-row">
+      pkg install nmap
+      <div class="btn-group">
+        <button class="copy-btn" onclick="copyText('pkg install nmap')">Copy</button>
+        <a href="https://www.youtube.com/results?search_query=nmap+termux+usage" target="_blank" class="yt-btn"><button class="yt-btn">Video</button></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script>
+  // Search Functionality
+  const searchInput = document.getElementById('search');
+  const sections = document.querySelectorAll('section');
+
+  searchInput.addEventListener('keyup', () => {
+    const value = searchInput.value.toLowerCase();
+    sections.forEach(section => {
+      const text = section.innerText.toLowerCase();
+      section.style.display = text.includes(value) ? 'block' : 'none';
+    });
+  });
+
+  // Copy Functionality
+  function copyText(text) {
+    navigator.clipboard.writeText(text).then(() => {
+      alert("Command Copied: " + text);
+    });
+  }
+</script>
+
+</body>
+</html>
